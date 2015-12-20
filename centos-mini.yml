@@ -18,8 +18,8 @@
     partition_size: 4096
 
     repos_list:
-      - { name: 'a-base', baseurl: "http://mirror.isoc.org.il/pub/centos/{{ centos_version }}/os/$basearch" }
-      - { name: 'a-updates', baseurl: "http://mirror.isoc.org.il/pub/centos/{{ centos_version }}/updates/$basearch" }
+      - { name: 'a-base', baseurl: 'http://mirror.isoc.org.il/pub/centos/7/os/$basearch' }
+      - { name: 'a-updates', baseurl: 'http://mirror.isoc.org.il/pub/centos/7/updates/$basearch' }
 
     # End of variable block used by generate_config.py
 
