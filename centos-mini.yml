@@ -5,8 +5,8 @@
 
   vars:
     centos_version: 7
-    cdlabel: "centos{{ centos_version }}-mini"
-    hostname: "centos{{ centos_version }}-mini"
+    cdlabel: centos7-mini
+    hostname: centos7-mini
     livecd_user: centos
     root_password: centos
 
