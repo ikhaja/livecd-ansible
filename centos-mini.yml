@@ -4,8 +4,9 @@
   gather_facts: false
 
   vars:
-    cdlabel: centos6-mini
-    hostname: centos6-mini
+    centos_version: 7
+    cdlabel: "centos{{ centos_version }}-mini"
+    hostname: "centos{{ centos_version }}-mini"
     livecd_user: centos
     root_password: centos
 
@@ -17,8 +18,8 @@
     partition_size: 4096
 
     repos_list:
-      - { name: 'a-base', baseurl: 'http://mirror.isoc.org.il/pub/centos/6/os/$basearch' }
-      - { name: 'a-updates', baseurl: 'http://mirror.isoc.org.il/pub/centos/6/updates/$basearch' }
+      - { name: 'a-base', baseurl: 'http://mirror.isoc.org.il/pub/centos/{{ centos_version }}/os/$basearch' }
+      - { name: 'a-updates', baseurl: 'http://mirror.isoc.org.il/pub/centos/{{ centos_version }}/updates/$basearch' }
 
     # End of variable block used by generate_config.py
 
